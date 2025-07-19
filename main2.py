@@ -12,9 +12,9 @@ from parse import parse_with_ollama
 # Streamlit UI
 st.title("Rahmat Wibowo's AI Web Scraper")
 url = st.text_input("Enter Website URL", value="https://shorthorn.digitalbeef.com/")
-state = st.text_input("Enter Ranch Name")
-member = st.text_input("Enter Ranch City")
-breed = st.text_input("Enter Ranch Member Location")
+name = st.text_input("Enter Ranch Name")
+city = st.text_input("Enter Ranch City")
+location = st.text_input("Enter Ranch Member Location")
 # url = "https://www.amgr.org/frm_directorySearch.cfm"
 # Step 1: Scrape the Website
 if st.button("Scrape Website"):
@@ -22,7 +22,7 @@ if st.button("Scrape Website"):
         st.write("Scraping the website...")
 
         # Scrape the website
-        dom_content = scrape_ranch(url,state,member,breed)
+        dom_content = scrape_ranch(url,name,city,location)
         body_content = extract_body_content(dom_content)
         cleaned_content = clean_body_content(body_content)
 

@@ -52,14 +52,16 @@ def scrape_ranch(website,name,city,location):
 
         if name != "":
             input_name.send_keys(name)
-        # input_member = driver.find_element(By.NAME, "memberID")
-        # member_select = Select(input_member)
-        # if member != "":
-        #     member_select.select_by_visible_text(member)
-        # input_breed = driver.find_element(By.NAME, "breedID")
-        # breed_select = Select(input_breed)
-        # if breed != "":
-        #     breed_select.select_by_visible_text(breed)
+
+        input_city = driver.find_element(By.NAME, "ranch_search_city")
+
+        if city != "":
+            input_city.send_keys(city)
+
+        input_location = driver.find_element(By.ID, "search-member-location")
+        location_select = Select(input_location)
+        if location != "":
+            location_select.select_by_visible_text(location)
         input_submit = driver.find_element(By.NAME, "btnsubmit")
         input_submit.click()
         time.sleep(10)
