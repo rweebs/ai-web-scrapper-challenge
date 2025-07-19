@@ -1,0 +1,24 @@
+Here is the extracted information in the format you specified:
+
+```
+{
+    "headers": [
+        "Action",
+        "State",
+        "Name",
+        "Farm",
+        "Phone",
+        "Website"
+    ],
+    "data": [
+        [
+            "View",
+            "LA",
+            "Hollie Metz",
+            "need - need",
+            "(337) 967-5608",
+            ""
+        ]
+    ]
+}
+```

@@ -1,0 +1,21 @@
+Here is the extracted information in the specified JSON format:
+
+```
+{
+    "headers": [
+        "Action",
+        "State",
+        "Name",
+        "Farm",
+        "Phone",
+        "Website"
+    ],
+    "data": [
+        ["View", "CO", "Cody or Austin Crum", "Triple C Goat Ranch - TCG", "(719) 537-6853", ""],
+        ["View", "CO", "Julie Kelley", "Kelley - KKJJ", "(719) 767-5982", ""],
+        ["View", "CO", "Fran Herrington", "Sunup Sundown Ranch - SSR", "(719) 940-1873", ""]
+    ]
+}
+```
+
+Note that I only extracted the information that matches the provided description, and did not include any additional text or comments.

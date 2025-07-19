@@ -1,0 +1,41 @@
+Here is the extracted information in JSON format:
+
+```
+{
+    "headers": [
+        "Action",
+        "State",
+        "Name",
+        "Farm",
+        "Phone",
+        "Website"
+    ],
+    "data": [
+        [
+            "View",
+            "KS",
+            "Dwight Elmore",
+            "3TAC Ranch Genetics - 3TR",
+            "(620) 899-0770",
+            ""
+        ],
+        [
+            "View",
+            "KS",
+            "Dwight Elmore",
+            "Rancho de Lori - ZZZ",
+            "(620) 899-0770",
+            ""
+        ],
+        [
+            "View",
+            "Joy Hurlburt",
+            "Range Ready Savanna - Hulburt Ranch ltd - RRS",
+            "(403) 330-5399",
+            ""
+        ]
+    ]
+}
+```
+
+Note that the data is extracted from the provided text content, and only includes the information that matches the description.

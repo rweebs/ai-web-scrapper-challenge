@@ -1,0 +1,34 @@
+Here is the extracted information in the specified JSON format:
+
+```
+{
+"headers": [
+    "Action",
+    "State",
+    "Name",
+    "Farm",
+    "Phone",
+    "Website"
+],
+"data": [
+    [
+        "View",
+        "FL",
+        "Melissa Silpe",
+        "The Silpe Farmstead - TSF",
+        "(941) 713-4016",
+        ""
+    ],
+    [
+        "View",
+        "TN",
+        "Michael & Blair Porter",
+        "",
+        "(615) 691-1839",
+        ""
+    ]
+]
+}
+```
+
+Note: There are only two entries that match the search criteria.

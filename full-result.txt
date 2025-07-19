@@ -1,0 +1,26 @@
+Here is the extracted information in the specified JSON format:
+
+```
+{
+    "headers": [
+        "Type",
+        "Member #",
+        "Prefix",
+        "Member Name",
+        "DBA",
+        "City",
+        "State/Prov"
+    ],
+    "data": [
+        [
+            "Bulls",
+            "",
+            "",
+            "NASH VALLEY FARM",
+            "RICHARD & ROBERTA MORRILL",
+            "WINDHAM",
+            "ME"
+        ]
+    ]
+}
+```

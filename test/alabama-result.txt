@@ -1,0 +1,22 @@
+Here is the extracted information in JSON format:
+
+{
+"headers": [
+    "Action",
+    "State",
+    "Name",
+    "Farm",
+    "Phone",
+    "Website"
+],
+"data": [
+    [
+        "View",
+        "AL",
+        "Joy Hurlburt",
+        "Range Ready Savanna - Hulburt Ranch ltd - RRS",
+        "(403) 330-5399",
+        ""
+    ]
+]
+}

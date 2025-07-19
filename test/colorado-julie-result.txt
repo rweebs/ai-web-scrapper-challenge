@@ -1,0 +1,26 @@
+Here is the extracted information in the required JSON format:
+
+```
+{
+    "headers": [
+        "Action",
+        "State",
+        "Name",
+        "Farm",
+        "Phone",
+        "Website"
+    ],
+    "data": [
+        [
+            "Showing 1 to 1 of 1 entries",
+            "CO",
+            "Julie Kelley",
+            "Kelley - KKJJ",
+            "(719) 767-5982",
+            ""
+        ]
+    ]
+}
+```
+
+Note: There is only one matching entry in the original text, which is the breeder directory search result for Julie Kelley.

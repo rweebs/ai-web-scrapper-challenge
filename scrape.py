@@ -9,7 +9,7 @@ import os
 import time
 load_dotenv()
 
-SBR_WEBDRIVER = os.getenv("SBR_WEBDRIVER")
+
 
 
 def scrape_website(website,state,member,breed):
@@ -29,7 +29,10 @@ def scrape_website(website,state,member,breed):
         member_select = Select(input_member)
         if member != "":
             member_select.select_by_visible_text(member)
-
+        input_breed = driver.find_element(By.NAME, "breedID")
+        breed_select = Select(input_breed)
+        if breed != "":
+            breed_select.select_by_visible_text(breed)
         input_submit = driver.find_element(By.NAME, "submitButton")
         input_submit.click()
         time.sleep(10)
@@ -37,6 +40,32 @@ def scrape_website(website,state,member,breed):
         html = driver.page_source
         return html
 
+def scrape_ranch(website,name,city,location):
+    print("Connecting to Scraping Browser...")
+    chrome_driver_path = "./chromedriver"
+    options = ChromeOptions()
+
+    service = Service(executable_path=chrome_driver_path)
+    with Chrome(service=service, options=options) as driver:
+        driver.get(website)
+        input_name = driver.find_element(By.NAME, "ranch_search_val")
+
+        if name != "":
+            input_name.send_keys(name)
+        # input_member = driver.find_element(By.NAME, "memberID")
+        # member_select = Select(input_member)
+        # if member != "":
+        #     member_select.select_by_visible_text(member)
+        # input_breed = driver.find_element(By.NAME, "breedID")
+        # breed_select = Select(input_breed)
+        # if breed != "":
+        #     breed_select.select_by_visible_text(breed)
+        input_submit = driver.find_element(By.NAME, "btnsubmit")
+        input_submit.click()
+        time.sleep(10)
+        print("Navigated! Scraping page content...")
+        html = driver.page_source
+        return html
 
 def extract_body_content(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
